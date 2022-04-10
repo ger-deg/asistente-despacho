@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS del index*/
+
+/*Versión de escritorio*/
+
+/*Pendiente hacer una animación en el valor de la UMA*/
+
+.MenuDelHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    background-image: linear-gradient(to right, rgb(56, 134, 252), rgb(152, 214, 250));
+    list-style: none;
+    grid-area: menu;
+}
+
+.DentroDelMenu {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+    transition: font-size 1s;
+}
+
+.DentroDelMenu:hover {
+    font-size: x-large;
+}
+
+/*Comentario para tutora Mica: la class "DentroDelMenu la hice porque no me modificada nada haciendo lo que debería hacer que es ".MenuDelHeader li" para hablarle a cado de los hijos. Supongo que hay una ruta mal o simplemente soy un mamerto, así todo lo hago andar para que el Código funcione*/
+
+.Encabezamiento {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(60, 99, 204);
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.EncabezamientoNoResuelto {
+    font-style: italic;
+    font-size: x-large;
+    padding-top: 5px;
+}
+
+.SeccionPrincipal {
+    background-image: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
+    padding: 20px;
+    margin-bottom: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1.7fr 1.8fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "foto texto"
+    "foto boton"; 
+}
+
+/* Comentario para tutora Mica: mi idea era aplicar Grids desde el propio body, pero cuando lo hacía el header simplemente desaparecía, así que lo apliqué a un contenedor que (no sé por qué) tampoco funcionaba hasta que arrancó*/
+
+.foto {
+    grid-area: foto;
+    display: flex;
+    justify-content: center;
+}
+
+.parrafoExplicativo {
+    font-style: italic;
+    grid-area: texto;
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    padding: 15px;
+}
+
+.boton {
+    grid-area: boton;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadaBoton {
+    background-color: white;
+    border: black 2px solid;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 6px;
+    color: black;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 18rem;
+    transition: all 1s;
+}
+
+.cadaBoton:hover {
+    margin: 1.1rem 0;
+    padding: 0.6rem;
+    width: 18.5rem;
+}
+
+footer {
+    background-color: rgb(60, 99, 204);
+    color: aliceblue;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-area: footer;
+}
+
+/*Versión de la tablet*/
+
+@media screen and (max-width:768px) {
+
+    .SeccionPrincipal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "texto"
+        "foto"
+        "boton"; 
+    }
+}
+
+/*Versión del celular*/
+
+@media screen and (max-width:480px) {
+
+    .SeccionPrincipal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "texto"
+        "foto"
+        "boton";
+    }
+
+    .foto {
+        width: 200px;
+        height: 200px;
+        padding-left: 70px;
+    /* Comentario para tutora Mica: acá me volví loco tratando de centrar la foto con flex pero no me salía nada, la acomodé de forma indigna con el padding, pero se que es para vomitar */
+    }
+
+    .parrafoExplicativo {
+        font-size: 20px;
+    }
+}
+
+
+/*CSS de Resultados*/
+
+/*Versión de escritorio*/
+
+.ResultadosSeccionPrincipal {
+    background-image: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
+    padding: 20px;
+    margin-bottom: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "texto1 tabla1"
+    "texto2 tabla2"
+    "texto3 tabla3";
+}
+
+.texto1 {
+    grid-area: texto1;
+}    
+
+.tabla1 {
+    grid-area: tabla1;
+}
+
+.texto2 {
+    grid-area: texto2;
+}    
+
+.tabla2 {
+    grid-area: tabla2;
+}
+
+.texto3 {
+    grid-area: texto3;
+}    
+
+.tabla3 {
+    grid-area: tabla3;
+}
+
+
+/*Versión de la tablet*/
+
+@media screen and (max-width:768px) {
+
+    .ResultadosSeccionPrincipal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "texto1 tabla1"
+        "texto2 tabla2"
+        "texto3 tabla3"; 
+    }
+}
+
+.foto1 {
+    width: 500px;
+}
+
+/*Versión del celular*/
+
+@media screen and (max-width:480px) {
+
+    .ResultadosSeccionPrincipal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "texto1"
+        "tabla1"
+        "texto2"
+        "tabla2"
+        "texto3"
+        "tabla3";
+    }
+
+    .foto1 {
+        width: 400px;
+
+
+
+/*
+.textocentrado {
+    text-align: center;
+}
+
+.colordefondoazul {
+    background-color: #227ad3;
+}
+
+body{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Ramaraja', serif;
+    font-family: 'Yeseva One', cursive;
+}
+
+h1{
+    padding-top: 20px;
+    height: 50px;
+    margin-top: 20px;
+    color:#f0f6ff;
+    line-height: 50px;
+    font-size: 40px;     
+}
+
+h3{
+    padding-bottom: 30px;  
+    color:#f0f8ff;
+    line-height: 30px;
+    font-size: 20px;     
+}
+
+.bordedelaimagen {
+    border: solid 10px black;
+    display: inline;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+section p{
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    text-align: right;
+    margin-right: 50px;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.menu li{
+    display: inline-block;
+    background-color: aliceblue;
+    position: relative;
+    padding: 10px 10px;
+}  
+
+.colordefondodelmenu ul {
+    background-color: aliceblue;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+}
+
+.submenu li{
+    display: block;
+    background-color: greenyellow;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+/* CSS del HTML valor UMA */
+
+
+/*
+.valoruma-titulo {
+    text-align: center;
+}
+
+.valoruma-tabla {
+    background-color: #227ad3;
+    width: 600px;
+    height: 500px;
+    margin: 50px 50% 50px 35%
+}
+
+/* CSS del HTML contacto */
+
+/*
+
+.contacto-titulo {
+    text-align: center;
+}
+
+.contacto-formulario {
+    background-color: #227ad3;
+    width: 500px;
+    height: 250px;
+    border: solid 5px black;
+    margin: 50px 50% 50px 35%;
+    display: inline-block;
+    padding: 15px;
+    content: 15px;
+}
+
+*/
