@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/* Mensaje para tutora Mica: me estoy desespendo*/
+
 /*CSS del index*/
 
 /*Versión de escritorio*/
@@ -30,8 +32,6 @@
 .DentroDelMenu:hover {
     font-size: x-large;
 }
-
-/*Comentario para tutora Mica: la class "DentroDelMenu la hice porque no me modificada nada haciendo lo que debería hacer que es ".MenuDelHeader li" para hablarle a cado de los hijos. Supongo que hay una ruta mal o simplemente soy un mamerto, así todo lo hago andar para que el Código funcione*/
 
 .Encabezamiento {
     display: flex;
@@ -63,8 +63,6 @@
     "foto texto"
     "foto boton"; 
 }
-
-/* Comentario para tutora Mica: mi idea era aplicar Grids desde el propio body, pero cuando lo hacía el header simplemente desaparecía, así que lo apliqué a un contenedor que (no sé por qué) tampoco funcionaba hasta que arrancó*/
 
 .foto {
     grid-area: foto;
@@ -150,7 +148,6 @@ footer {
         width: 200px;
         height: 200px;
         padding-left: 70px;
-    /* Comentario para tutora Mica: acá me volví loco tratando de centrar la foto con flex pero no me salía nada, la acomodé de forma indigna con el padding, pero se que es para vomitar */
     }
 
     .parrafoExplicativo {
