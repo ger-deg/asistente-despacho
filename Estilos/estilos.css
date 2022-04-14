@@ -3,26 +3,25 @@
     padding: 0;
 }
 
-/* Mensaje para tutora Mica: me estoy desespendo. No puedo salir del 404. Estoy haciendo el desafio para poder cumplir pero estoy a ciegas*/
-
 /*CSS del index*/
 
 /*Versión de escritorio*/
 
-/*Pendiente hacer una animación en el valor de la UMA*/
-
 .MenuDelHeader {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 40px;
     background-image: linear-gradient(to right, rgb(56, 134, 252), rgb(152, 214, 250));
     list-style: none;
-    grid-area: menu;
+    /*grid-area: menu;*/
 }
 
 .DentroDelMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    align-items: center;
     text-decoration: none;
     color: aliceblue;
     font-size: large;
@@ -234,117 +233,4 @@ footer {
     }
 
     .foto1 {
-        width: 400px;
-
-
-
-/*
-.textocentrado {
-    text-align: center;
-}
-
-.colordefondoazul {
-    background-color: #227ad3;
-}
-
-body{
-    font-family: 'Frank Ruhl Libre', serif;
-    font-family: 'Ramaraja', serif;
-    font-family: 'Yeseva One', cursive;
-}
-
-h1{
-    padding-top: 20px;
-    height: 50px;
-    margin-top: 20px;
-    color:#f0f6ff;
-    line-height: 50px;
-    font-size: 40px;     
-}
-
-h3{
-    padding-bottom: 30px;  
-    color:#f0f8ff;
-    line-height: 30px;
-    font-size: 20px;     
-}
-
-.bordedelaimagen {
-    border: solid 10px black;
-    display: inline;
-    border-radius: 50%;
-    margin-left: 50px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
-section p{
-    position: absolute;
-    top: 24%;
-    left: 50%;
-    text-align: right;
-    margin-right: 50px;
-    font-size: x-large;
-    font-style: italic;
-}
-
-.menu li{
-    display: inline-block;
-    background-color: aliceblue;
-    position: relative;
-    padding: 10px 10px;
-}  
-
-.colordefondodelmenu ul {
-    background-color: aliceblue;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-}
-
-.submenu li{
-    display: block;
-    background-color: greenyellow;
-}
-
-.menu li:hover .submenu{
-    display: block;
-}
-
-/* CSS del HTML valor UMA */
-
-
-/*
-.valoruma-titulo {
-    text-align: center;
-}
-
-.valoruma-tabla {
-    background-color: #227ad3;
-    width: 600px;
-    height: 500px;
-    margin: 50px 50% 50px 35%
-}
-
-/* CSS del HTML contacto */
-
-/*
-
-.contacto-titulo {
-    text-align: center;
-}
-
-.contacto-formulario {
-    background-color: #227ad3;
-    width: 500px;
-    height: 250px;
-    border: solid 5px black;
-    margin: 50px 50% 50px 35%;
-    display: inline-block;
-    padding: 15px;
-    content: 15px;
-}
-
-*/
+        width: 400px;        
