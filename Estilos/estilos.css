@@ -3,29 +3,28 @@
     padding: 0;
 }
 
-/*CSS del index*/
-
-/*Versión de escritorio*/
+/*CSS del index versión de escritorio*/
 
 .MenuDelHeader {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 50px;
     background-image: linear-gradient(to right, rgb(56, 134, 252), rgb(152, 214, 250));
     list-style: none;
-    /*grid-area: menu;*/
+    margin-bottom: 10px;
 }
 
 .DentroDelMenu {
     display: flex;
     flex-direction: row;
-    justify-content: center;    align-items: center;
+    justify-content: center;    
+    align-items: center;
     text-decoration: none;
     color: aliceblue;
     font-size: large;
-    transition: font-size 1s;
+    transition: font-size 0.5s;
 }
 
 .DentroDelMenu:hover {
@@ -38,10 +37,10 @@
     text-align: center;
     background-color: rgb(60, 99, 204);
     color: aliceblue;
-    margin-top: 10px;
     margin-bottom: 10px;
     padding: 20px;
     font-size: x-large;
+    --bs-gutter-x: 0;
 }
 
 .EncabezamientoNoResuelto {
@@ -54,24 +53,15 @@
     background-image: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
     padding: 20px;
     margin-bottom: 10px;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1.7fr 1.8fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "foto texto"
-    "foto boton"; 
+    --bs-gutter-x: 0;
 }
-
 .foto {
-    grid-area: foto;
     display: flex;
     justify-content: center;
 }
 
 .parrafoExplicativo {
     font-style: italic;
-    grid-area: texto;
     text-align: center;
     font-size: 30px;
     color: aliceblue;
@@ -79,7 +69,6 @@
 }
 
 .boton {
-    grid-area: boton;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,64 +85,101 @@
     text-align: center;
     text-decoration: none;
     width: 18rem;
-    transition: all 1s;
+   /*transition: all 0.5s;*/
 }
 
-.cadaBoton:hover {
+/*.cadaBoton:hover {
     margin: 1.1rem 0;
     padding: 0.6rem;
     width: 18.5rem;
+}*/
+
+.cadaBoton:active {
+    background-color: rgb(247, 247, 137);
+    color: black;
 }
 
 footer {
     background-color: rgb(60, 99, 204);
     color: aliceblue;
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    grid-area: footer;
+    font-size: auto;
 }
 
-/*Versión de la tablet*/
-
-@media screen and (max-width:768px) {
-
-    .SeccionPrincipal {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "texto"
-        "foto"
-        "boton"; 
-    }
+.mataMargenRow {
+    --bs-gutter-x: 0;
 }
 
-/*Versión del celular*/
+/*CSS de valor UMA versión escritorio*/
 
-@media screen and (max-width:480px) {
+.valoruma-tabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+    background-image: linear-gradient(to left, rgb(81, 126, 248), rgb(152, 214, 250));
+    padding: 15px;
+}
 
-    .SeccionPrincipal {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "texto"
-        "foto"
-        "boton";
-    }
+.valoruma-tabla h1 {
+    color: whitesmoke;
+}
+
+.valoruma-tabla p {
+    font-style: italic;
+    font-size: large;
+}
+
+/*CSS del index versión de la tablet*/
+
+@media (min-width:768px) and (max-width:1023px) {
 
     .foto {
-        width: 200px;
-        height: 200px;
-        padding-left: 70px;
+        width: 500px;
+        height: 500px;
+        transform: translatex(100px);
+    }
+}
+
+/*Comentario para tutora Mica: me volví literalmente un simio pelado tratando de que esa imagen se ajuste al responsive en tablet y celular. No sé por qué razón se iba de las columnas asignadas. Por eso y  para que el diseño sea responsive y para que la tutora Mica me apruebe el desafio con un "apobó de lástima", no me quedó otra que atar la imagen con alambre con el translate, pero aclaro que esa no era la intención del alumno. Además no sé por qué me la achicó un poco en la versión de escritorio*/
+
+.parrafoExplicativo {
+    font-size: 20px;
+}
+
+/*CSS del Valor UMA versión de la tablet*/
+
+/*No hay que tocar nada, responsive solo*/
+
+/*CSS del index versión del celular*/
+
+@media (min-width:375px) and (max-width:767px) {
+
+    .foto {
+        width: 250px;
+        height: 250px;
+        transform: translatex(30px);
     }
 
     .parrafoExplicativo {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
+/*CSS del Valor UMA versión del celular*/
+
+/*No hay que tocar nada, responsive solo*/
+
+
+
+
+
+/*OJO CON LO QUE SIGUE, QUE LO VAMOS A DETONAR*/
 
 /*CSS de Resultados*/
 
@@ -233,4 +259,7 @@ footer {
     }
 
     .foto1 {
-        width: 400px;        
+        width: 400px;      
+    }    
+/* CSS de Valor UMA */
+
