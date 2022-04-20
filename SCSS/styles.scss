@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
+
+/*CSS del index versión de escritorio*/
+
+.MenuDelHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-image: linear-gradient(to right, rgb(56, 134, 252), rgb(152, 214, 250));
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.DentroDelMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+    transition: font-size 0.5s;
+    &:hover {
+        font-size: x-large;
+    }
+}
+
+.Encabezamiento {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(60, 99, 204);
+    color: aliceblue;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: x-large;
+    --bs-gutter-x: 0;
+}
+
+.EncabezamientoNoResuelto {
+    font-style: italic;
+    font-size: x-large;
+    padding-top: 5px;
+}
+
+.SeccionPrincipal {
+    background-image: $colorPrincipal;
+    padding: 20px;
+    margin-bottom: 10px;
+    --bs-gutter-x: 0;
+}
+.foto {
+    display: flex;
+    justify-content: center;
+}
+
+.parrafoExplicativo {
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    padding: 15px;
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadaBoton {
+    background-color: white;
+    border: black 2px solid;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 6px;
+    color: black;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    width: 18rem;
+    &:active {
+        background-color: rgb(247, 247, 137);
+        color: black;
+    } 
+   /*transition: all 0.5s;*/
+}
+
+/*.cadaBoton:hover {
+    margin: 1.1rem 0;
+    padding: 0.6rem;
+    width: 18.5rem;
+}*/
+
+footer {
+    background-color: rgb(60, 99, 204);
+    color: aliceblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: auto;
+}
+
+.mataMargenRow {
+    --bs-gutter-x: 0;
+}
+
+/*CSS de valor UMA versión escritorio*/
+
+.valoruma-tabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+    background-image: linear-gradient(to left, rgb(81, 126, 248), rgb(152, 214, 250));
+    padding: 15px;
+    h1 {
+        color: whitesmoke;
+    }
+    p {
+    font-style: italic;
+    font-size: large;
+    }
+}
+
+/*CSS del index versión de la tablet*/
+
+@media (min-width:768px) and (max-width:1023px) {
+
+    .foto {
+        width: 500px;
+        height: 500px;
+        transform: translatex(100px);
+    }
+}
+
+.parrafoExplicativo {
+    font-size: 20px;
+}
+
+/*CSS del Valor UMA versión de la tablet*/
+
+/*No hay que tocar nada, responsive solo*/
+
+/*CSS del index versión del celular*/
+
+@media (min-width:375px) and (max-width:767px) {
+
+    .foto {
+        width: 250px;
+        height: 250px;
+        transform: translatex(30px);
+    }
+
+    .parrafoExplicativo {
+        font-size: 16px;
+    }
+}
+
+/*CSS del Valor UMA versión del celular*/
+
+/*No hay que tocar nada, responsive solo*/
+
+
+
+
+
+
+/*OJO CON LO QUE SIGUE, QUE LO VAMOS A DETONAR*/
+
+/*CSS de Resultados*/
+
+/*Versión de escritorio*/
+
+.ResultadosSeccionPrincipal {
+    background-image: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
+    padding: 20px;
+    margin-bottom: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "texto1 tabla1"
+    "texto2 tabla2"
+    "texto3 tabla3";
+}
+
+.texto1 {
+    grid-area: texto1;
+}    
+
+.tabla1 {
+    grid-area: tabla1;
+}
+
+.texto2 {
+    grid-area: texto2;
+}    
+
+.tabla2 {
+    grid-area: tabla2;
+}
+
+.texto3 {
+    grid-area: texto3;
+}    
+
+.tabla3 {
+    grid-area: tabla3;
+}
+
+
+/*Versión de la tablet*/
+
+@media screen and (max-width:768px) {
+
+    .ResultadosSeccionPrincipal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "texto1 tabla1"
+        "texto2 tabla2"
+        "texto3 tabla3"; 
+    }
+}
+
+.foto1 {
+    width: 500px;
+}
+
+/*Versión del celular*/
+
+@media screen and (max-width:480px) {
+
+.ResultadosSeccionPrincipal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "texto1"
+    "tabla1"
+    "texto2"
+    "tabla2"
+    "texto3"
+    "tabla3";
+}
+
+.foto1 {
+        width: 400px;
+}      
+}
