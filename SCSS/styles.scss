@@ -32,16 +32,35 @@ $colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
     }
 }
 
+.SalvandoPotatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    font-size: x-large;
+    background-color: rgb(60, 99, 204);
+    height: 220px;
+    --bs-gutter-x: 0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.Otrafoto {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+h4 {
+    font-style: italic;
+    font-size: x-large;
+}
+
 .Encabezamiento {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(60, 99, 204);
-    color: aliceblue;
-    margin-bottom: 10px;
-    padding: 20px;
-    font-size: x-large;
-    --bs-gutter-x: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .EncabezamientoNoResuelto {
@@ -55,10 +74,17 @@ $colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
     padding: 20px;
     margin-bottom: 10px;
     --bs-gutter-x: 0;
+    padding: 15px;
 }
-.foto {
+
+.divdelafoto {
     display: flex;
     justify-content: center;
+}
+
+.foto {
+    border-radius: 50%;
+    max-width: 500px;
 }
 
 .parrafoExplicativo {
@@ -66,7 +92,6 @@ $colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
     text-align: center;
     font-size: 30px;
     color: aliceblue;
-    padding: 15px;
 }
 
 .boton {
@@ -92,12 +117,6 @@ $colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
     } 
    /*transition: all 0.5s;*/
 }
-
-/*.cadaBoton:hover {
-    margin: 1.1rem 0;
-    padding: 0.6rem;
-    width: 18.5rem;
-}*/
 
 footer {
     background-color: rgb(60, 99, 204);
