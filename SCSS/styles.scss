@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-$colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
+/*$colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));*/
 
 /*CSS del index versión de escritorio*/
 
@@ -38,12 +38,12 @@ $colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
     align-items: center;
     text-align: center;
     color: aliceblue;
-    font-size: x-large;
-    background-color: rgb(60, 99, 204);
+    font-size: x-large;    
     height: 220px;
     --bs-gutter-x: 0;
     margin-bottom: 10px;
     padding-left: 10px;
+    background-color: rgb(60, 99, 204);
 }
 
 .Otrafoto {
@@ -63,18 +63,18 @@ h4 {
     justify-content: space-evenly;
 }
 
-.EncabezamientoNoResuelto {
+/*.EncabezamientoNoResuelto {
     font-style: italic;
     font-size: x-large;
     padding-top: 5px;
-}
+}*/
 
 .SeccionPrincipal {
-    background-image: $colorPrincipal;
     padding: 20px;
     margin-bottom: 10px;
     --bs-gutter-x: 0;
     padding: 15px;
+    background-image: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
 }
 
 .divdelafoto {
@@ -115,7 +115,15 @@ h4 {
         background-color: rgb(247, 247, 137);
         color: black;
     } 
-   /*transition: all 0.5s;*/
+/*transition: all 0.5s;*/
+}
+
+@mixin heigthdecard {
+    max-height: 250px;
+}
+
+.fotodecard {
+    @include heigthdecard;
 }
 
 footer {

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0; }
 
+/*$colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));*/
 /*CSS del index versión de escritorio*/
 .MenuDelHeader {
   display: flex;
@@ -33,11 +34,11 @@
   text-align: center;
   color: aliceblue;
   font-size: x-large;
-  background-color: #3c63cc;
   height: 220px;
   --bs-gutter-x: 0;
   margin-bottom: 10px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  background-color: #3c63cc; }
 
 .Otrafoto {
   max-width: 200px;
@@ -53,17 +54,17 @@ h4 {
   flex-direction: row;
   justify-content: space-evenly; }
 
-.EncabezamientoNoResuelto {
-  font-style: italic;
-  font-size: x-large;
-  padding-top: 5px; }
-
+/*.EncabezamientoNoResuelto {
+    font-style: italic;
+    font-size: x-large;
+    padding-top: 5px;
+}*/
 .SeccionPrincipal {
-  background-image: linear-gradient(to left, #425efa, #98d6fa);
   padding: 20px;
   margin-bottom: 10px;
   --bs-gutter-x: 0;
-  padding: 15px; }
+  padding: 15px;
+  background-image: linear-gradient(to left, #425efa, #98d6fa); }
 
 .divdelafoto {
   display: flex;
@@ -99,6 +100,9 @@ h4 {
   .cadaBoton:active {
     background-color: #f7f789;
     color: black; }
+
+.fotodecard {
+  max-height: 250px; }
 
 footer {
   background-color: #3c63cc;
