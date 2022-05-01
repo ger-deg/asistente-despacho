@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-/*$colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));*/
-
 /*CSS del index versión de escritorio*/
 
 .MenuDelHeader {
@@ -63,12 +61,6 @@ h4 {
     justify-content: space-evenly;
 }
 
-/*.EncabezamientoNoResuelto {
-    font-style: italic;
-    font-size: x-large;
-    padding-top: 5px;
-}*/
-
 .SeccionPrincipal {
     padding: 20px;
     margin-bottom: 10px;
@@ -115,7 +107,6 @@ h4 {
         background-color: rgb(247, 247, 137);
         color: black;
     } 
-/*transition: all 0.5s;*/
 }
 
 @mixin heigthdecard {
@@ -160,6 +151,47 @@ footer {
     }
 }
 
+/*CSS del prorrateo(quienes somos) versión de escritorio*/
+
+$quienessomos: (
+    colaboradores: linear-gradient(60deg, #96deda 0%, #50c9c3 100%),
+    porquehodor: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%),
+    creadores: linear-gradient(to top, #a3bded 0%, #6991c7 100%),
+);
+
+@each $var, $colorfondo in $quienessomos {
+    .btn--#{var} {
+        background-color: $colorfondo;
+    }    
+}
+
+.Otrafoto--hodor {
+    @extend .Otrafoto;
+    border-radius: 0%;
+}
+
+.porquesomoshodor {
+    background-image: map-get($quienessomos, porquehodor);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.creadores {
+    background-image: map-get($quienessomos, creadores);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.colaboradores {
+    background-image: map-get($quienessomos, colaboradores);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.Ajustandoelpadding {
+    padding-bottom: 10px;
+}
+
 /*CSS del index versión de la tablet*/
 
 @media (min-width:768px) and (max-width:1023px) {
@@ -174,6 +206,7 @@ footer {
 .parrafoExplicativo {
     font-size: 20px;
 }
+
 
 /*CSS del Valor UMA versión de la tablet*/
 

@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0; }
 
-/*$colorPrincipal: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));*/
 /*CSS del index versión de escritorio*/
 .MenuDelHeader {
   display: flex;
@@ -40,7 +39,7 @@
   padding-left: 10px;
   background-color: #3c63cc; }
 
-.Otrafoto {
+.Otrafoto, .Otrafoto--hodor {
   max-width: 200px;
   max-height: 200px;
   border-radius: 50%; }
@@ -54,11 +53,6 @@ h4 {
   flex-direction: row;
   justify-content: space-evenly; }
 
-/*.EncabezamientoNoResuelto {
-    font-style: italic;
-    font-size: x-large;
-    padding-top: 5px;
-}*/
 .SeccionPrincipal {
   padding: 20px;
   margin-bottom: 10px;
@@ -95,8 +89,7 @@ h4 {
   padding: 0.5rem;
   text-align: center;
   text-decoration: none;
-  width: 18rem;
-  /*transition: all 0.5s;*/ }
+  width: 18rem; }
   .cadaBoton:active {
     background-color: #f7f789;
     color: black; }
@@ -131,6 +124,37 @@ footer {
   .valoruma-tabla p {
     font-style: italic;
     font-size: large; }
+
+/*CSS del prorrateo(quienes somos) versión de escritorio*/
+.btn--var {
+  background-color: linear-gradient(60deg, #96deda 0%, #50c9c3 100%); }
+
+.btn--var {
+  background-color: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); }
+
+.btn--var {
+  background-color: linear-gradient(to top, #a3bded 0%, #6991c7 100%); }
+
+.Otrafoto--hodor {
+  border-radius: 0%; }
+
+.porquesomoshodor {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.creadores {
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.colaboradores {
+  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+  padding: 10px;
+  margin-bottom: 10px; }
+
+.Ajustandoelpadding {
+  padding-bottom: 10px; }
 
 /*CSS del index versión de la tablet*/
 @media (min-width: 768px) and (max-width: 1023px) {
