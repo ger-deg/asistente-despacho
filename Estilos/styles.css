@@ -4,28 +4,30 @@
   padding: 0; }
 
 /*CSS del index versión de escritorio*/
-.MenuDelHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-image: linear-gradient(to right, #3886fc, #98d6fa);
-  list-style: none;
-  margin-bottom: 10px; }
+header {
+  position: sticky;
+  top: 0%;
+  left: 0%; }
 
-.DentroDelMenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: aliceblue;
-  font-size: large;
-  transition: font-size 0.5s; }
-  .DentroDelMenu:hover {
-    font-size: x-large; }
+.colorheader {
+  background-color: #316b83 !important; }
 
+.colorletraheader {
+  color: aliceblue; }
+
+/*.DentroDelMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+    transition: font-size 0.5s;
+    &:hover {
+        font-size: x-large;
+    }
+}*/
 .SalvandoPotatos {
   display: flex;
   justify-content: center;
@@ -35,9 +37,8 @@
   font-size: x-large;
   height: 220px;
   --bs-gutter-x: 0;
-  margin-bottom: 10px;
   padding-left: 10px;
-  background-color: #3c63cc; }
+  background-color: #6D8299; }
 
 .Otrafoto, .Otrafoto--hodor {
   max-width: 200px;
@@ -48,17 +49,19 @@ h4 {
   font-style: italic;
   font-size: x-large; }
 
-.Encabezamiento {
+.fondodeseccion {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-
-.SeccionPrincipal {
+  justify-content: space-evenly;
+  align-items: center;
   padding: 20px;
-  margin-bottom: 10px;
-  --bs-gutter-x: 0;
-  padding: 15px;
-  background-image: linear-gradient(to left, #425efa, #98d6fa); }
+  background-image: url(/Imagenes/palacio-justicia.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #6D8299;
+  background-blend-mode: multiply;
+  min-height: 500px; }
 
 .divdelafoto {
   display: flex;
@@ -68,8 +71,11 @@ h4 {
   border-radius: 50%;
   max-width: 500px; }
 
+.fondodeparrafo {
+  background-color: #8CA1A5;
+  padding: 10px; }
+
 .parrafoExplicativo {
-  font-style: italic;
   text-align: center;
   font-size: 30px;
   color: aliceblue; }
@@ -98,17 +104,18 @@ h4 {
   max-height: 250px; }
 
 footer {
-  background-color: #3c63cc;
-  color: aliceblue;
+  background-color: #D5BFBF;
+  color: #0c0e0f;
   height: 50px;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: auto; }
 
-.mataMargenRow {
-  --bs-gutter-x: 0; }
+.matamargen {
+  margin: 0%; }
 
 /*CSS de valor UMA versión escritorio*/
 .valoruma-tabla {
@@ -117,20 +124,26 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(to left, #517ef8, #98d6fa);
+  background-color: #7C99AC;
   padding: 15px; }
   .valoruma-tabla h1 {
     color: whitesmoke; }
   .valoruma-tabla p {
     font-style: italic;
-    font-size: large; }
+    font-size: large;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+.valoruma-padding {
+  padding-left: 15px;
+  padding-right: 15px; }
 
 /*CSS del prorrateo(quienes somos) versión de escritorio*/
 .btn--var {
-  background-color: linear-gradient(60deg, #96deda 0%, #50c9c3 100%); }
+  background-color: #316b83; }
 
 .btn--var {
-  background-color: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); }
+  background-color: #8CA1A5; }
 
 .btn--var {
   background-color: linear-gradient(to top, #a3bded 0%, #6991c7 100%); }
@@ -139,22 +152,39 @@ footer {
   border-radius: 0%; }
 
 .porquesomoshodor {
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  padding: 10px;
-  margin-bottom: 10px; }
+  background-color: #316b83;
+  padding: 10px; }
+
+.fancy-undeline {
+  background-image: linear-gradient(120deg, #757F9A, #D7DDE8 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 80%;
+  transition: background-size 0.25s ease-in; }
+  .fancy-undeline:hover {
+    background-size: 100% 88% !important; }
 
 .creadores {
   background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
-  padding: 10px;
-  margin-bottom: 10px; }
+  padding: 10px; }
 
 .colaboradores {
-  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
-  padding: 10px;
-  margin-bottom: 10px; }
+  padding: 10px; }
 
 .Ajustandoelpadding {
   padding-bottom: 10px; }
+
+/*CSS de contacto de escritorio*/
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #6D8299; }
+  .contacto-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center; }
 
 /*CSS del index versión de la tablet*/
 @media (min-width: 768px) and (max-width: 1023px) {

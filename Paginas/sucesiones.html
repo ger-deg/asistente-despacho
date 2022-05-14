@@ -7,41 +7,84 @@
 
     <meta name="keywords" content="proyecto hodor, asistente de despacho, asistente despacho, valor uma, valor uhom, uejn, german degano, mariano mestola, fernando cordero, juzgados civiles, inteligencia artificial justicia">
 
-    <meta name="description" content="Proyecto Hodor - Asistente de Despacho. Despache la primera providencia en una sucesión intestada">
+    <meta name="description" content="Proyecto Hodor - Asistente de Despacho. Consulte el valor actual e histórico de la UMA de la forma más simple">
 
-    <title>Despachar sucesión intestada</title>
+    <title>Valor historio de la UMA</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../Estilos/styles.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Ramaraja&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="/Imagenes/mini-hodor-2.jpg"/>
 </head>
+
 <body>
+<div class="container-fluid p-0">
     
     <header>
-        <nav>
-            <ul class="MenuDelHeader">
-                <li> <a href="../index.html" class="DentroDelMenu">Volver al inicio</a></li>
-                <li><a href="../Paginas/contacto.html" class="DentroDelMenu">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light colorheader">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html" style="color: aliceblue;">Proyecto Hodor - Asistente de Despacho</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html" style="color: aliceblue;">Volver al inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Paginas/contacto.html"style="color: aliceblue;">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="fondopalacio">
+        <section class="row SalvandoPotatos">
+            <img src="../Imagenes/mini-hodor-2.jpg" class="col-2 Otrafoto" alt="Imagen presentación">
+            <div class="col-10">
+                <h1 >Proyecto Hodor - Asistente de Despacho</h1>
+                    <h4>Asistente semiautomático para facilitar el trabajo en la Justicia Nacional en lo Civil</h4>
+            </div>
+        </section>
 
-    <h1 class="textocentrado colordefondoazul"> Asistente Judicial</h1>
-    
-    <h3 class="textocentrado colordefondoazul">Asistente semiautomático para facilitar el trabajo en la Justicia</h3>
-    
-    <h2>Despachar sucesión intestada</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto laborum nihil quas accusantium, mollitia neque repellat magnam impedit ipsam cumque hic nemo officia eos blanditiis beatae inventore dolorum sapiente sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, laborum. Odit quis excepturi, et eveniet explicabo ab ex quo vel itaque aperiam, labore cumque magni alias quidem animi mollitia! Praesentium.</p>
-                
-        <a href="../index.html">Volver al inicio</a>
-    
+        <div class="row mataMargenRow">
+            <div class="valoruma-tabla">
+                <h1>Valores históricos del UHOM</h1>
+                <p><strong><u style="color: aliceblue;">Artículo 1 del Decreto 2536/2015: </u> "Institúyese con la denominación “UNIDAD DE HONORARIOS DE MEDIACIÓN” (UHOM) a la unidad de honorario profesional del mediador, cuyo valor será equivalente a DOCE (12) Unidades Retributivas del SISTEMA NACIONAL DE EMPLEO PÚBLICO (SINEP), aprobado por el Convenio Colectivo de Trabajo Sectorial homologado por el Decreto N° 2098/08, redondeado a la decena próxima superior.</strong></p>   
+            </div>
+            <div class="valoruma-padding">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col-4">Entrada en vigencia</th>
+                            <th scope="col-4">Valor UHOM</th>
+                            <th scope="col-4">Link</th>
+                        </tr>                  
+                    </thead>
+                    <tbody>                       
+                        <tr>
+                            <th scope="row">Abril 2022 <span>- Hoy vigente</span></th>
+                            <td>$1.250</td>
+                            <td><a href="../Imagenes/valoruhom-abril22.jpg">Consultar</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Febrero 2022</th>
+                            <td>$1.200</td>
+                            <td><a href="../Imagenes/valoruhom-febrero22.jpg">Consultar</a></td>
+                        </tr>
+                    </tbody>
+                  </table> 
+            </div>
+        </div>         
     </main>
 
-    <footer>Asistente Judicial - Derechos reservados</footer>
-
+    <footer class="row col-12 matamargen">Proximamente, inscripción de declaratoria, regulación de honorarios y primera providencia en juicio ejecutivo</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</div>    
 </body>
 </html>
