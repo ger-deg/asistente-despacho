@@ -148,7 +148,7 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;   
-    background-color: #7C99AC;
+    background-color: #8CA1A5;
     padding: 15px;
     h1 {
         color: whitesmoke;
@@ -169,9 +169,9 @@ footer {
 /*CSS del prorrateo(quienes somos) versión de escritorio*/
 
 $quienessomos: (
-    porquehodor: #316b83,
-    desarrolladores: #8CA1A5,
-    creadores: linear-gradient(to top, #a3bded 0%, #6991c7 100%),
+    porquehodor: #D5BFBF,
+    creadores: #6D8299,
+    colaboradores: #8CA1A5,
 );
 
 @each $var, $colorfondo in $quienessomos {
@@ -181,8 +181,8 @@ $quienessomos: (
 }
 
 .Otrafoto--hodor {
-    @extend .Otrafoto;
-    border-radius: 0%;
+    max-width: 120px;
+    max-height: 120px;
 }
 
 .porquesomoshodor {
@@ -190,32 +190,55 @@ $quienessomos: (
     padding: 10px;
 }
 
-
 .fancy-undeline {
-    background-image: linear-gradient(120deg, #757F9A,#D7DDE8 100%);
+    /*background-image: linear-gradient(120deg, #ff6e7f,#ff6e7f 100%);*/
+    background-image: linear-gradient(120deg, #757F9A,#757f9a 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.4em;
     background-position: 0 80%;
     transition: background-size 0.25s ease-in;
     &:hover {
     background-size: 100% 88% !important;
-    }
-}
-
-.creadores {
-    background-image: map-get($quienessomos, creadores);
-    padding: 10px;
-}
-
-.colaboradores {
-    background-image: map-get($quienessomos, colaboradores);
-    padding: 10px;
+    } 
 }
 
 .Ajustandoelpadding {
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
+.probandofoto {
+    background-image: url(/Imagenes/imagen-hodor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend .Otrafoto--hodor;
+}
+
+.cajamolesta {
+    background-color: map-get($quienessomos, porquehodor);
+    width: 50%;
+    height: auto;
+    padding: 10px;    
+}
+
+.cajamolesta2 {
+    background-color: map-get($quienessomos,     creadores);
+    @extend .cajamolesta;
+}
+
+.cajamolesta3 {
+    background-color: map-get($quienessomos, colaboradores);
+    width: 100%;
+    @extend .cajamolesta;
+}
+
+.ajustedecaja {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 10px;
+}
 
 /*CSS de contacto de escritorio*/
 
@@ -246,7 +269,6 @@ $quienessomos: (
 .parrafoExplicativo {
     font-size: 20px;
 }
-
 
 /*CSS del Valor UMA versión de la tablet*/
 
