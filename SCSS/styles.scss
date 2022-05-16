@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/*CSS del index versión de escritorio*/
+/*SCSS del index versión de escritorio*/
 
 header {
     position: sticky;
@@ -18,20 +18,6 @@ header {
 .colorletraheader {
     color: aliceblue;
 }
-
-/*.DentroDelMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;    
-    align-items: center;
-    text-decoration: none;
-    color: aliceblue;
-    font-size: large;
-    transition: font-size 0.5s;
-    &:hover {
-        font-size: x-large;
-    }
-}*/
 
 .SalvandoPotatos {
     display: flex;
@@ -99,23 +85,6 @@ h4 {
     align-items: center;
 }
 
-.cadaBoton {
-    background-color: white;
-    border: black 2px solid;
-    box-shadow: 1px 1px 8px #888888;
-    border-radius: 6px;
-    color: black;
-    margin: 1rem 0;
-    padding: 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    width: 18rem;
-    &:active {
-        background-color: rgb(247, 247, 137);
-        color: black;
-    } 
-}
-
 @mixin heigthdecard {
     max-height: 250px;
 }
@@ -140,7 +109,7 @@ footer {
     margin: 0%;
 }
 
-/*CSS de valor UMA versión escritorio*/
+/*SCSS de valor UMA versión escritorio*/
 
 .valoruma-tabla {
     display: flex;
@@ -166,7 +135,7 @@ footer {
     padding-right: 15px;
 }
 
-/*CSS del prorrateo(quienes somos) versión de escritorio*/
+/*SCSS del prorrateo(quienes somos) versión de escritorio*/
 
 $quienessomos: (
     porquehodor: #D5BFBF,
@@ -190,8 +159,7 @@ $quienessomos: (
     padding: 10px;
 }
 
-.fancy-undeline {
-    /*background-image: linear-gradient(120deg, #ff6e7f,#ff6e7f 100%);*/
+.fancy-undeline {    
     background-image: linear-gradient(120deg, #757F9A,#757f9a 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.4em;
@@ -200,6 +168,11 @@ $quienessomos: (
     &:hover {
     background-size: 100% 88% !important;
     } 
+}
+
+.fancy-undeline_1 {
+    background-image: linear-gradient(120deg, #D5BFBF,#D5BFBF 100%);
+    @extend .fancy-undeline;
 }
 
 .Ajustandoelpadding {
@@ -240,7 +213,7 @@ $quienessomos: (
     padding-left: 10px;
 }
 
-/*CSS de contacto de escritorio*/
+/*SCSS de contacto de escritorio*/
 
 .contacto-form {
     display: flex;
@@ -253,6 +226,9 @@ $quienessomos: (
         justify-content: center;
     }
 }
+
+/*SCSS de resultados versión de escritorio*/
+
 
 
 /*CSS del index versión de la tablet*/
