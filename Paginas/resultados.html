@@ -33,7 +33,18 @@
                                 <a class="nav-link active" aria-current="page" href="../index.html" style="color: aliceblue;">Volver al inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="Paginas/contacto.html"style="color: aliceblue;">Contacto</a>
+                                <a class="nav-link active" aria-current="page" href="../Paginas/prorrateo.html" style="color: aliceblue;">Quiénes somos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">Servicios</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="https://proyectohodor.herokuapp.com/ASISTENTE">Despachar una sucesión intestada</a></li>
+                                    <li><a class="dropdown-item" href="../Paginas/valoruma.html">Consultar Valor UMA</a></li>
+                                    <li><a class="dropdown-item" href="../Paginas/sucesiones.html">Consultar valor UHOM</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../Paginas/contacto.html" style="color: aliceblue;">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -89,38 +100,56 @@
                         </div>   
                     </div>
                 </div>
-            <div class="row p-0 m-0">
-                <div class="cajamolesta3">    
-                    <div>
-                        <h3 class="col-12 fancy-undeline_1">Esto no sería posible sin la promoción, la colaboración y el apoyo de</h3>  
-                    </div>
-                    <div class="ajustedecaja"style="padding-bottom: 10px;">
-                        <img src="../Imagenes/fernandocordero.JPG" class="Otrafoto--hodor" alt="imagen de Mariano Mestola">
-                        <p> <span style="color: aliceblue;">Fernando Cordero. </span> Empleado del Juzgado Nacional de Primera Instancia en lo Civil 110. Secretario de Tecnología y Gestión Informática de la UEJN. Fernando es uno de los principales promotores e impulsores del proyecto. Es un generador constante de nuevas ideas e innovaciones. Es parte esencial y central del proyecto, el que no sería lo mismo sin él.</p>   
-                    </div>
-                    <div class="ajustedecaja" style="padding-bottom: 10px;">
-                        <p> <span style="color: aliceblue;">Union de Empleados de la Justicia Nacional. </span> La UEJN ha promovido y apoyado fuertemente el proyecto, además de que ha impulsado diversas innovaciones en materia de nuevas tecnologías, como modificaciones en el sistema Lex-100 y la creación del Departamento de Inteligencia Artificial.</p>   
-                    </div>
-                    <div class="ajustedecaja" style="padding-bottom: 10px;">
-                        <p> <span style="color: aliceblue;">Comisión de Informática y Oficina de Sistemas y Tecnología de la Cámara Nacional de Apelaciones en lo Civil. </span>El proyecto recibió un gran apoyo de la Cámara Nacional de Apelaciones en lo Civil, permitiendo que el proyecto se incorpore dentro del portal de la Cámara Civil (https://infocivil.pjn.gov.ar), lo cual fue una gran muestra de confianza a los proyectos generados por los integrantes del fuero.</p>   
-                    </div>
-                    <div class="ajustedecaja">
-                        <p> <span style="color: aliceblue;">Nuestros jueces. </span> Nada de esto sería posible sin que nuestros jueces nos den la confianza suficiente para generar herramientas que faciliten el trabajo. Somos afortunados de contar con ellos y por eso queremos agredecer especialemnte a <span style="color: aliceblue;">Christian R. Pettis </span>(Juzgado 98), <span style="color: aliceblue;">José Luis Bournissen </span>(Juzgado 66, subrogante cuando se aplicó el proyecto) y <span style="color: aliceblue;">Santiago Strassera </span>(Juzgado 37).</p>   
-                    </div>
-                </div>    
             </div>
-        </div>   
 
-        <!-- <div class="ResultadosSeccionPrincipal">    
-              <div class="texto1"> <h2 >Tabla de tiempo de despacho regulares</h2> </div>
-            <div class="tabla1"> <img src="../Imagenes/antes-de-hodor.jpg" alt="Estadística Antes de Hodor" class="foto1"> </div>
+            <div class="row matarow">
+                <div class="cajamolesta2">
+                    <div>
+                        <div>
+                            <h3 class="fancy-undeline_1">Tiempo de despacho regular</h3>
+                        </div>    
+                        <div class="ajustedecaja">
+                            <p>Esta muestra ha sido obtenida del Juzgado 66. En la tabla puede observarse los tiempos que insumía el despacho del primer proveído en una sucesión intestada sin la ayuda del asistente. Es decir, los tiempos usuales.</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="cajamolesta4">
+                    <img src="../Imagenes/antes-de-hodor.jpg" class="img-fluid" alt="Estadística Antes de Hodor">
+                </div>
+            </div>
 
-            <div class="texto2"> <h2>Tabla de tiempo de despacho con asistente</h2> </div>
-            <div class="tabla2"> <img src="../Imagenes/despues-de-hodor.jpg" alt="Estadística Despues de Hodor" class="foto1"> </div>
+            <div class="row matarow">
+                <div class="cajamolesta4">
+                    <img src="../Imagenes/despues-de-hodor.jpg" class="img-fluid" alt="Estadística después de Hodor">
+                </div>
+                <div class="cajamolesta">
+                    <div>
+                        <div>
+                            <h3 class="fancy-undeline">Tiempo de despacho con asistente</h3>
+                        </div>    
+                        <div class="ajustedecaja">
+                            <p>Aquí puede verse la variación temporal a partir de la utilización de <span style="color: #226ddd;">Proyecto Hodor - Asistente de Despacho</span>. Las reducciones de tiempo<span style="color: #226ddd;">superan en la mayoría de los casos al 50%. </span> Es decir, se trata de una herramienta que limita a la mitad los tiempos de tareas las repetitivas, con claras posibilidades de extenderse a otros supuestos y generar un cambio exponencial.</p>
+                        </div>   
+                    </div>
+                </div>
+            </div>
 
-            <div class="texto3"> <h2>Tabla comparativa y de ahorro de tiempo</h2> </div>
-            <div class="tabla3"> <img src="../Imagenes/tabla-comparativa.jpg" alt="Tabla comparativa de resultados" class="foto1"> </div>
-        </div>       -->
+            <div class="row matarow">
+                <div class="cajamolesta2">
+                    <div>
+                        <div>
+                            <h3 class="fancy-undeline_1">Tabla comparativa y de ahorro de tiempo</h3>
+                        </div>    
+                        <div class="ajustedecaja">
+                            <p>Aquí puede verse finalmente una tabla comparativa entre el tiempo usual de despacho y la reducción que se vio tras la aplicación de <span style="color: aliceblue;">Proyecto Hodor - Asistente de Despacho</span>. Como vemos, se trata de un impacto que conduce a insistir por el camino de la automatización y asistencia de tareas repetitivas.</p>
+                        </div>   
+                    </div>
+                </div>
+                <div class="cajamolesta4">
+                    <img src="../Imagenes/tabla-comparativa.jpg" class="img-fluid" alt="Estadística comparativa tras Hodor">
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="row col-12 matamargen">Proximamente, inscripción de declaratoria, regulación de honorarios y primera providencia en juicio ejecutivo</footer>
@@ -130,9 +159,3 @@
 
 </body>
 </html>   
-
-    
-
-
-
-

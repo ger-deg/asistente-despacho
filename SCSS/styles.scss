@@ -56,6 +56,7 @@ h4 {
     background-color: #6D8299;
     background-blend-mode: multiply;
     min-height: 500px;
+    gap: 10px;
 }
 
 .divdelafoto {
@@ -192,7 +193,8 @@ $quienessomos: (
     background-color: map-get($quienessomos, porquehodor);
     width: 50%;
     height: auto;
-    padding: 10px;    
+    padding: 10px;
+    padding-left: 20px;    
 }
 
 .cajamolesta2 {
@@ -204,6 +206,13 @@ $quienessomos: (
     background-color: map-get($quienessomos, colaboradores);
     width: 100%;
     @extend .cajamolesta;
+}
+
+.cajamolesta4 {
+    @extend .cajamolesta;
+    padding: 0%;
+    border-right: 15px;
+    border-color: black;
 }
 
 .ajustedecaja {
@@ -229,7 +238,9 @@ $quienessomos: (
 
 /*SCSS de resultados versión de escritorio*/
 
-
+.matarow {
+    --bs-gutter-x: 0rem;
+}
 
 /*CSS del index versión de la tablet*/
 

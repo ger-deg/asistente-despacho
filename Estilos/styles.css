@@ -48,7 +48,8 @@ h4 {
   background-attachment: fixed;
   background-color: #6D8299;
   background-blend-mode: multiply;
-  min-height: 500px; }
+  min-height: 500px;
+  gap: 10px; }
 
 .divdelafoto {
   display: flex;
@@ -150,11 +151,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.cajamolesta, .cajamolesta2, .cajamolesta3 {
+.cajamolesta, .cajamolesta2, .cajamolesta3, .cajamolesta4 {
   background-color: #D5BFBF;
   width: 50%;
   height: auto;
-  padding: 10px; }
+  padding: 10px;
+  padding-left: 20px; }
 
 .cajamolesta2 {
   background-color: #6D8299; }
@@ -162,6 +164,11 @@ footer {
 .cajamolesta3 {
   background-color: #8CA1A5;
   width: 100%; }
+
+.cajamolesta4 {
+  padding: 0%;
+  border-right: 15px;
+  border-color: black; }
 
 .ajustedecaja {
   display: flex;
@@ -182,6 +189,9 @@ footer {
     justify-content: center; }
 
 /*SCSS de resultados versión de escritorio*/
+.matarow {
+  --bs-gutter-x: 0rem; }
+
 /*CSS del index versión de la tablet*/
 @media (min-width: 768px) and (max-width: 1023px) {
   .foto {
