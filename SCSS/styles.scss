@@ -242,130 +242,70 @@ $quienessomos: (
     --bs-gutter-x: 0rem;
 }
 
-/*CSS del index versión de la tablet*/
+/*AJUSTANDO MEDIA QUERIES A TABLET*/
 
 @media (min-width:768px) and (max-width:1023px) {
 
-    .foto {
-        width: 500px;
-        height: 500px;
-        transform: translatex(100px);
-    }
-}
+/*SCSS del index versión de la tablet*/
 
 .parrafoExplicativo {
     font-size: 20px;
 }
 
-/*CSS del Valor UMA versión de la tablet*/
+/*SCSS de prorrateo(quienes somos)*/
 
-/*No hay que tocar nada, responsive solo*/
+.Otrafoto--hodor {
+    display: none;
+}
+
+.resultados-mobile {
+    display: flex;
+    flex-direction: reverse;
+}
+
+}
 
 
-/*CSS del index versión del celular*/
+/*AJUSTANDO MEDIA QUERIES A CELULAR*/
 
-@media (min-width:375px) and (max-width:767px) {
+/*SCSS del index*/
 
-    .foto {
-        width: 250px;
-        height: 250px;
-        transform: translatex(30px);
-    }
+@media (min-width:320px) and (max-width:767px) {
 
     .parrafoExplicativo {
         font-size: 16px;
     }
+
+/*SCSS de prorrateo(quienes somos)*/
+
+.Otrafoto--hodor {
+    display: none;
 }
 
-/*CSS del Valor UMA versión del celular*/
-
-/*No hay que tocar nada, responsive solo*/
-
-
-
-
-
-
-/*OJO CON LO QUE SIGUE, QUE LO VAMOS A DETONAR*/
-
-/*CSS de Resultados*/
-
-/*Versión de escritorio*/
-
-.ResultadosSeccionPrincipal {
-    background-image: linear-gradient(to left, rgb(66, 94, 250), rgb(152, 214, 250));
-    padding: 20px;
-    margin-bottom: 10px;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "texto1 tabla1"
-    "texto2 tabla2"
-    "texto3 tabla3";
+.ajustandoelmobile {
+    display: flex;
+    flex-direction: column;
 }
 
-.texto1 {
-    grid-area: texto1;
-}    
-
-.tabla1 {
-    grid-area: tabla1;
+.cajamolesta {
+    width: 100%;
 }
 
-.texto2 {
-    grid-area: texto2;
-}    
-
-.tabla2 {
-    grid-area: tabla2;
+.cajamolesta2 {
+    width: 100%;
 }
 
-.texto3 {
-    grid-area: texto3;
-}    
+/*SCSS de contacto*/
 
-.tabla3 {
-    grid-area: tabla3;
+.ninovimo {
+    display: none;
 }
 
+/*SCSS de resultados*/
 
-/*Versión de la tablet*/
-
-@media screen and (max-width:768px) {
-
-    .ResultadosSeccionPrincipal {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "texto1 tabla1"
-        "texto2 tabla2"
-        "texto3 tabla3"; 
-    }
+.resultados-mobile {
+    display: flex;
+    flex-direction: reverse;
 }
 
-.foto1 {
-    width: 500px;
-}
-
-/*Versión del celular*/
-
-@media screen and (max-width:480px) {
-
-.ResultadosSeccionPrincipal {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "texto1"
-    "tabla1"
-    "texto2"
-    "tabla2"
-    "texto3"
-    "tabla3";
-}
-
-.foto1 {
-        width: 400px;
-}      
 }

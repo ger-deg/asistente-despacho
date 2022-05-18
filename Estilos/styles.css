@@ -192,75 +192,37 @@ footer {
 .matarow {
   --bs-gutter-x: 0rem; }
 
-/*CSS del index versión de la tablet*/
+/*AJUSTANDO MEDIA QUERIES A TABLET*/
 @media (min-width: 768px) and (max-width: 1023px) {
-  .foto {
-    width: 500px;
-    height: 500px;
-    transform: translatex(100px); } }
-
-.parrafoExplicativo {
-  font-size: 20px; }
-
-/*CSS del Valor UMA versión de la tablet*/
-/*No hay que tocar nada, responsive solo*/
-/*CSS del index versión del celular*/
-@media (min-width: 375px) and (max-width: 767px) {
-  .foto {
-    width: 250px;
-    height: 250px;
-    transform: translatex(30px); }
+  /*SCSS del index versión de la tablet*/
   .parrafoExplicativo {
-    font-size: 16px; } }
+    font-size: 20px; }
+  /*SCSS de prorrateo(quienes somos)*/
+  .Otrafoto--hodor, .probandofoto {
+    display: none; }
+  .resultados-mobile {
+    display: flex;
+    flex-direction: reverse; } }
 
-/*CSS del Valor UMA versión del celular*/
-/*No hay que tocar nada, responsive solo*/
-/*OJO CON LO QUE SIGUE, QUE LO VAMOS A DETONAR*/
-/*CSS de Resultados*/
-/*Versión de escritorio*/
-.ResultadosSeccionPrincipal {
-  background-image: linear-gradient(to left, #425efa, #98d6fa);
-  padding: 20px;
-  margin-bottom: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "texto1 tabla1" "texto2 tabla2" "texto3 tabla3"; }
-
-.texto1 {
-  grid-area: texto1; }
-
-.tabla1 {
-  grid-area: tabla1; }
-
-.texto2 {
-  grid-area: texto2; }
-
-.tabla2 {
-  grid-area: tabla2; }
-
-.texto3 {
-  grid-area: texto3; }
-
-.tabla3 {
-  grid-area: tabla3; }
-
-/*Versión de la tablet*/
-@media screen and (max-width: 768px) {
-  .ResultadosSeccionPrincipal {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "texto1 tabla1" "texto2 tabla2" "texto3 tabla3"; } }
-
-.foto1 {
-  width: 500px; }
-
-/*Versión del celular*/
-@media screen and (max-width: 480px) {
-  .ResultadosSeccionPrincipal {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "texto1" "tabla1" "texto2" "tabla2" "texto3" "tabla3"; }
-  .foto1 {
-    width: 400px; } }
+/*AJUSTANDO MEDIA QUERIES A CELULAR*/
+/*SCSS del index*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .parrafoExplicativo {
+    font-size: 16px; }
+  /*SCSS de prorrateo(quienes somos)*/
+  .Otrafoto--hodor, .probandofoto {
+    display: none; }
+  .ajustandoelmobile {
+    display: flex;
+    flex-direction: column; }
+  .cajamolesta, .cajamolesta2, .cajamolesta3, .cajamolesta4 {
+    width: 100%; }
+  .cajamolesta2 {
+    width: 100%; }
+  /*SCSS de contacto*/
+  .ninovimo {
+    display: none; }
+  /*SCSS de resultados*/
+  .resultados-mobile {
+    display: flex;
+    flex-direction: reverse; } }
