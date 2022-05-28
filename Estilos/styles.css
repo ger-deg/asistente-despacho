@@ -151,14 +151,14 @@ footer {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.cajamolesta, .cajamolesta2, .cajamolesta3, .cajamolesta4 {
+.cajamolesta, .cajamolesta2, .cajamolesta5, .cajamolesta3, .cajamolesta4 {
   background-color: #D5BFBF;
   width: 50%;
   height: auto;
   padding: 10px;
   padding-left: 20px; }
 
-.cajamolesta2 {
+.cajamolesta2, .cajamolesta5 {
   background-color: #6D8299; }
 
 .cajamolesta3 {
@@ -169,6 +169,9 @@ footer {
   padding: 0%;
   border-right: 15px;
   border-color: black; }
+
+.cajamolesta5 {
+  width: 100%; }
 
 .ajustedecaja {
   display: flex;
@@ -215,9 +218,9 @@ footer {
   .ajustandoelmobile {
     display: flex;
     flex-direction: column; }
-  .cajamolesta, .cajamolesta2, .cajamolesta3, .cajamolesta4 {
+  .cajamolesta, .cajamolesta2, .cajamolesta5, .cajamolesta3, .cajamolesta4 {
     width: 100%; }
-  .cajamolesta2 {
+  .cajamolesta2, .cajamolesta5 {
     width: 100%; }
   /*SCSS de contacto*/
   .ninovimo {

@@ -215,6 +215,11 @@ $quienessomos: (
     border-color: black;
 }
 
+.cajamolesta5 {
+    @extend .cajamolesta2;
+    width: 100%;
+}
+
 .ajustedecaja {
     display: flex;
     flex-direction: row;
