@@ -22,7 +22,7 @@ if(monto >= 1 && monto <= 46500) {
     honorarios = parseInt(monto * 2 / 100);}
     while (honorarios > 185999){
         honorarios = 186000
-        }
+    }
 
 
 let cantidadDeUhom = honorarios / valorUhom;
