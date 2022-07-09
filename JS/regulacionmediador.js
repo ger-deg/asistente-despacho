@@ -19,13 +19,13 @@ if(monto >= 1 && monto <= 46500) {
 } else if (monto > 930000 && monto <= 1550000) {
     valorCambiante(20);
 } else {(monto > 1550000) 
-    honorarios = parseInt(monto * 2 / 100)
-    while (honorarios > 185999){
-    honorarios = 186000};
+    honorarios = parseInt(monto * 2 / 100);
+    if (honorarios > 185999){
+    honorarios = 186000}
 };
 
 
 let cantidadDeUhom = honorarios / valorUhom;
-let proveidoRegulacionMediador = ("     AUTOS, VISTOS Y CONSIDERANDO:\n     En atención a lo solicitado y al valor actual de la unidad de honorarios de mediación (UHOM), le corresponde a " + nombreMediador + " por sus tareas en esa etapa la suma de $ " + honorarios + " equivalentes a " + cantidadDeUhom + " UHOM.\n     Fijase el plazo para su pago en diez días y notifíquese en el domicilio electrónico.");
+let proveidoRegulacionMediador = `      AUTOS, VISTOS Y CONSIDERANDO:\n     En atención a lo solicitado y al valor actual de la unidad de honorarios de mediación (UHOM), le corresponde a ${nombreMediador} por sus tareas en esa etapa la suma de $${honorarios}, equivalentes a ${cantidadDeUhom} UHOM.\n        Fijase el plazo para su pago en diez días y notifíquese en el domicilio electrónico.`
 
-alert (proveidoRegulacionMediador);
+document.write (proveidoRegulacionMediador);
