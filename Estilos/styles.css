@@ -73,6 +73,9 @@ h4 {
   flex-direction: column;
   align-items: center; }
 
+.ajusteDeCard {
+  min-height: 288px; }
+
 .fotodecard {
   max-height: 250px; }
 
