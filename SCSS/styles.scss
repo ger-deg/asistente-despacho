@@ -251,6 +251,23 @@ $quienessomos: (
     --bs-gutter-x: 0rem;
 }
 
+/* Regulación medidor */
+.form_mediador{
+    width: 80%;
+    margin: 16px auto;
+    
+    .btn-calcular{
+        border: solid 1px;
+        background-color: #316b83;
+        color: aliceblue;
+        
+        &:hover{
+            color: white;
+            background-color: lighten(#316b83, 10%);
+        }
+    }
+}
+    
 /*AJUSTANDO MEDIA QUERIES A TABLET*/
 
 @media (min-width:768px) and (max-width:1023px) {

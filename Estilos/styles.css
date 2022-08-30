@@ -198,6 +198,18 @@ footer {
 .matarow {
   --bs-gutter-x: 0rem; }
 
+/* Regulación medidor */
+.form_mediador {
+  width: 80%;
+  margin: 16px auto; }
+  .form_mediador .btn-calcular {
+    border: solid 1px;
+    background-color: #316b83;
+    color: aliceblue; }
+    .form_mediador .btn-calcular:hover {
+      color: white;
+      background-color: #3f89a8; }
+
 /*AJUSTANDO MEDIA QUERIES A TABLET*/
 @media (min-width: 768px) and (max-width: 1023px) {
   /*SCSS del index versión de la tablet*/
