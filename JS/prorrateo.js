@@ -1,6 +1,6 @@
 let arrayPeritos = [];
 
-let montoProceso = parseInt(prompt("¿Cuál es el monto del proceso?"));
+let montoProceso = Number(prompt("¿Cuál es el monto del proceso?"));
 let otrosProfesionales;
 let honorarios;
 function CalculoHonorario () {
