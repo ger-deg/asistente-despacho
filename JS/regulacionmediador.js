@@ -31,5 +31,14 @@ btnCalcular.addEventListener("click", (e) => {
         honorarios = 205200}
     };
     let cantidadDeUhom = honorarios / valorUhom;
-    resultado.innerHTML= `<h3> AUTOS, VISTOS Y CONSIDERANDO:</h3> <p>En atención a lo solicitado y al valor actual de la unidad de honorarios de mediación (UHOM), le corresponde a ${mediador.value} por sus tareas en esa etapa la suma de $${honorarios}, equivalentes a ${cantidadDeUhom} UHOM.<br/>     Fijase el plazo para su pago en diez días y notifíquese en el domicilio electrónico.</p> `
+    resultado.innerHTML= `<p> AUTOS, VISTOS Y CONSIDERANDO:</p> <p>En atención a lo solicitado y al valor actual de la unidad de honorarios de mediación (UHOM), le corresponde a ${mediador.value} por sus tareas en esa etapa la suma de $${honorarios}, equivalentes a ${cantidadDeUhom} UHOM.<br/>     Fijase el plazo para su pago en diez días y notifíquese en el domicilio electrónico.</p> `
 });
+
+resultado.addEventListener("click", () => {
+    let copyText = resultado.innerText;
+    navigator.clipboard.writeText(copyText)
+
+    var myAlert = document.getElementById('toastNotice');
+    var bsAlert = new bootstrap.Toast(myAlert);
+    bsAlert.show();
+})

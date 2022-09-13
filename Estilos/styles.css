@@ -210,6 +210,20 @@ footer {
       color: white;
       background-color: #3f89a8; }
 
+.mediador {
+  min-height: 80vh; }
+
+.resultadoMediador {
+  margin: 16px auto;
+  width: 80%; }
+  .resultadoMediador p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 1.5; }
+
+.toast {
+  margin: 16px auto 48px auto; }
+
 /*AJUSTANDO MEDIA QUERIES A TABLET*/
 @media (min-width: 768px) and (max-width: 1023px) {
   /*SCSS del index versión de la tablet*/

@@ -43,7 +43,7 @@
             </nav>
         </header>
 
-    <main class="container">
+    <main class="container mediador">
         <form class="form_mediador">
             <div class="mb-3">
               <label for="mediador" class="form-label">Ingresar el nombre del mediador/a:</label>
@@ -55,10 +55,17 @@
             </div>
             <button type="submit" class="btn btn-calcular" id="calcular">Calcular</button>
         </form>
-        <section id="resultado">
-            
+        <section id="resultado" class="resultadoMediador">
+   
+            <!-- Toast -->
         </section>
-    
+        <div class="toast-container position-absolute p-3" id="toastPlacement"></div>
+            <div id="toastNotice" class="toast " data-bs-delay="1000">
+            <div class="toast-body">
+                Copiado en el portapapeles.
+            </div>
+            </div>            
+        </div>
     </main>
 
     <footer>Asistente Judicial - Derechos reservados</footer>
