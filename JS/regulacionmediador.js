@@ -3,7 +3,7 @@ const monto = document.getElementById("monto");
 const btnCalcular = document.getElementById("calcular");
 const resultado = document.getElementById("resultado");
 
-const valorUhom = 1870;
+const valorUhom = 2003;
 let honorarios;
 
 function valorCambiante (valor){
@@ -13,22 +13,22 @@ function valorCambiante (valor){
 btnCalcular.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if(monto.value >= 1 && monto.value <= 56100) {
+    if(monto.value >= 1 && monto.value <= 60090) {
         valorCambiante(3);
-    } else if (monto.value > 56100 && monto.value <= 112200) {
+    } else if (monto.value > 60090 && monto.value <= 120180) {
         valorCambiante(6);
-    } else if (monto.value > 112200 && monto.value <= 280500) {
+    } else if (monto.value > 120180 && monto.value <= 300450) {
         valorCambiante(9);
-    } else if (monto.value > 280500 && monto.value <= 561000) {
+    } else if (monto.value > 300450 && monto.value <= 600900) {
         valorCambiante(12);
-    } else if (monto.value > 561000 && monto.value <= 1122000) {
+    } else if (monto.value > 600900 && monto.value <= 1201800) {
         valorCambiante(16);
-    } else if (monto.value > 1122000 && monto.value <= 1870000) {
+    } else if (monto.value > 1201800 && monto.value <= 2003000) {
         valorCambiante(20);
-    } else {(monto.value > 1870000) 
+    } else {(monto.value > 2003000) 
         honorarios = parseInt(monto.value * 2 / 100);
-        if (honorarios > 224399){
-        honorarios = 224400}
+        if (honorarios > 240359){
+        honorarios = 240360}
     };
     let cantidadDeUhom = honorarios / valorUhom;
     resultado.innerHTML= `<p><strong> AUTOS, VISTOS Y CONSIDERANDO: </strong></p> <p>En atención a lo solicitado y al valor actual de la unidad de honorarios de mediación (UHOM), le corresponde a ${mediador.value} por sus tareas en esa etapa la suma de $${honorarios}, equivalentes a ${cantidadDeUhom} UHOM.<br/>     Fijase el plazo para su pago en diez días y notifíquese en el domicilio electrónico.</p> `
