@@ -1,6 +1,5 @@
 var proyectName = "Proyecto Hodor v1.7";
 var autores = "Autores: German Degano y Mariano Méstola"
-var desarrollador = "Software desarrollado por Guillermo Picardi"
 var msgPsw = "Debe contener al menos un número, una letra mayúscula, una letra  minúscula y 8 caracteres como mínimo"
 
 //Devuelve un str completado con cero para meses. 
