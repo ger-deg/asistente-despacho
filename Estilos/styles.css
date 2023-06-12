@@ -51,6 +51,21 @@ h4 {
   min-height: 500px;
   gap: 10px; }
 
+.fondodeseccion1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-image: url(../Imagenes/palacio-justicia-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #6D8299;
+  background-blend-mode: multiply;
+  min-height: 500px;
+  gap: 10px; }
+
 .divdelafoto {
   display: flex;
   justify-content: center; }
