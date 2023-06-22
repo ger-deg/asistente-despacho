@@ -3,7 +3,7 @@ const monto = document.getElementById("monto");
 const btnCalcular = document.getElementById("calcular");
 const resultado = document.getElementById("resultado");
 
-const valorUhom = 2510;
+const valorUhom = 2770;
 let honorarios;
 
 function valorCambiante (valor){
@@ -13,22 +13,22 @@ function valorCambiante (valor){
 btnCalcular.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if(monto.value >= 1 && monto.value <= 75300) {
+    if(monto.value >= 1 && monto.value <= valorUhom*30) {
         valorCambiante(3);
-    } else if (monto.value > 75300 && monto.value <= 150600) {
+    } else if (monto.value > valorUhom*30 && monto.value <= valorUhom*60) {
         valorCambiante(6);
-    } else if (monto.value > 150600 && monto.value <= 376500) {
+    } else if (monto.value > valorUhom*60 && monto.value <= valorUhom*150) {
         valorCambiante(9);
-    } else if (monto.value > 376500 && monto.value <= 753000) {
+    } else if (monto.value > valorUhom*150 && monto.value <= valorUhom*300) {
         valorCambiante(12);
-    } else if (monto.value > 753000 && monto.value <= 1506000) {
+    } else if (monto.value > valorUhom*300 && monto.value <= valorUhom*600) {
         valorCambiante(16);
-    } else if (monto.value > 1506000 && monto.value <= 2510000) {
+    } else if (monto.value > valorUhom*600 && monto.value <= valorUhom*1000) {
         valorCambiante(20);
-    } else {(monto.value > 2510000) 
+    } else {(monto.value > valorUhom*1000) 
         honorarios = parseInt(monto.value * 2 / 100);
-        if (honorarios > 301199){
-        honorarios = 301200}
+        if (honorarios > valorUhom*120){
+        honorarios = valorUhom*120}
     };
     let cantidadDeUhom = honorarios / valorUhom;
     resultado.innerHTML= `<p><strong> AUTOS, VISTOS Y CONSIDERANDO: </strong></p> <p>En atención a lo solicitado y al valor actual de la unidad de honorarios de mediación (UHOM), le corresponde a ${mediador.value} por sus tareas en esa etapa la suma de $${honorarios}, equivalentes a ${cantidadDeUhom} UHOM.<br/>     Fijase el plazo para su pago en diez días y notifíquese en el domicilio electrónico.</p> `
