@@ -3,7 +3,7 @@ const monto = document.getElementById("monto");
 const btnCalcular = document.getElementById("calcular");
 const resultado = document.getElementById("resultado");
 
-const valorUhom = 2770;
+const valorUhom = 3680;
 let honorarios;
 
 function valorCambiante (valor){
