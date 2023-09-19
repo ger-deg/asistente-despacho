@@ -71,8 +71,11 @@ let surge_conexidad_de_caratula = prompt('¿Surge alguna conexidad de la caratul
                                     }    
                             }
                     }
-                    else if (se_indica_nombre_ejecutado_o_solo_propietario == "NO SE INDICA"){};
-            }else if (calidad_administrador == "TIENE EL MANDATO VENCIDO") {
+            else if (calidad_administrador == "TIENE EL MANDATO VENCIDO") {
+                let se_indica_nombre_ejecutado_o_solo_propietario = prompt ('¿Se indica el nombre del ejecutado o se reclama solo contra el "propietario"?');
+                    if (se_indica_nombre_ejecutado_o_solo_propietario == "SI"){
+
+
                 alert ("sigue bien hasta acá");
             }else if (calidad_administrador == "NO") {
                 alert ("de pedo también sigue bien hasta acá");
